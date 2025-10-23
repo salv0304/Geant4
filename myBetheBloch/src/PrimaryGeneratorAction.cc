@@ -48,7 +48,6 @@ namespace B1
 
 PrimaryGeneratorAction::PrimaryGeneratorAction()
 {
-    G4int nofParticles = 10000;
     //fParticleGun = new G4ParticleGun(nofParticles);
     fParticleSource = new G4GeneralParticleSource();
 
@@ -72,7 +71,7 @@ PrimaryGeneratorAction::PrimaryGeneratorAction()
 
     // Energia (fissa o distribuita)
     fParticleSource->GetCurrentSource()->GetEneDist()->SetEnergyDisType("Mono");
-    fParticleSource->GetCurrentSource()->GetEneDist()->SetMonoEnergy(100.*GeV);
+    fParticleSource->GetCurrentSource()->GetEneDist()->SetMonoEnergy(500.*MeV);
     
 }
 

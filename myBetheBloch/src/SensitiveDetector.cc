@@ -22,9 +22,10 @@ G4bool MySensitiveDetector::ProcessHits(G4Step *aStep, G4TouchableHistory *ROhli
 
 	// Ottieni l'energia del primario dal track
 	G4Track* track = aStep->GetTrack();
+	
 	// FONDAMENTALE: filtra solo particelle primarie
 	if (track->GetParentID() != 0) return true;
-	G4double beamEnergy = track->GetVertexKineticEnergy();
+	
     
     // POI: Controlla energia depositata
     G4double edep = aStep->GetTotalEnergyDeposit();
@@ -36,6 +37,9 @@ G4bool MySensitiveDetector::ProcessHits(G4Step *aStep, G4TouchableHistory *ROhli
     
     // Obtain step lenght
     G4double stepLength = aStep->GetStepLength();
+    
+	// CHIAVE: usa l'energia al PRE-step point (energia PRIMA della perdita)
+    G4double kineticEnergy = aStep->GetPreStepPoint()->GetKineticEnergy();
     
     // Calculate dE/dx
     G4double dEdx = 0.;
@@ -66,7 +70,7 @@ G4bool MySensitiveDetector::ProcessHits(G4Step *aStep, G4TouchableHistory *ROhli
     
     
     man->FillNtupleIColumn(0, evt);
-    man->FillNtupleDColumn(1, beamEnergy);  // AGGIUNGI QUESTA RIGA
+    man->FillNtupleDColumn(1, kineticEnergy); 
     man->FillNtupleDColumn(2, stepLength);
     man->FillNtupleDColumn(3, edep);
     man->FillNtupleDColumn(4, dEdx);

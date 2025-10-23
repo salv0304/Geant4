@@ -29,6 +29,7 @@
 
 #include "DetectorConstruction.hh"
 #include "SensitiveDetector.hh"
+#include "G4UserLimits.hh"
 
 #include "G4RunManager.hh"
 #include "G4NistManager.hh"
@@ -53,8 +54,10 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
   G4NistManager* nist = G4NistManager::Instance();
   
   // Box parameters
-  G4double slice_sizeXY = 100*mm, slice_sizeZ = 10*mm;
+  G4double slice_sizeXY = 10*cm, slice_sizeZ = 10*cm;
   G4Material* slice_mat = nist->FindOrBuildMaterial("G4_Pb");
+  G4cout << "Material: " << slice_mat->GetName()
+       << " density(g/cm3)=" << slice_mat->GetDensity()/(g/cm3) << G4endl;
 
   // Option to switch on/off checking of volumes overlaps
   //
@@ -63,8 +66,8 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
   //
   // World
   //
-  G4double world_sizeXY = 2*m;
-  G4double world_sizeZ  = 2*m;
+  G4double world_sizeXY = 10*m;
+  G4double world_sizeZ  = 10*m;
   G4Material* world_mat = nist->FindOrBuildMaterial("G4_AIR");
 
   auto solidWorld = new G4Box("World",                           // its name
@@ -91,10 +94,10 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
     
 	
   //Now the logical volume, but since it has to be sensitive, i need to add the definition of the logical volume in the .hh file, since i need it also outside of the Construct method.
-  logicSlice = new G4LogicalVolume(solidSlice, world_mat, "logicSlice");
+  logicSlice = new G4LogicalVolume(solidSlice, slice_mat, "logicSlice");
 	
   //Array of detectors
-  for(G4int i = 0; i < 100; i++)
+  for(G4int i = 0; i < 200; i++)
   {
     G4VPhysicalVolume *physDetector = new G4PVPlacement(0, G4ThreeVector(0, 0, -0.5*m+(i+0.5)*m/100), logicSlice, "physSlice", logicWorld, false, i, true);	// each detector has a different index
   }
@@ -123,6 +126,11 @@ void DetectorConstruction::ConstructSDandField()
 	
 	// Tell to the logicVolume that this is a sensitive detector
 	logicSlice->SetSensitiveDetector(sensDet);
+	
+  // Nel tuo DetectorConstruction.cc, dopo aver definito il materiale piombo:
+  G4double maxStep = 0.1*mm;  // Step massimo di 0.1 mm
+  G4UserLimits* stepLimit = new G4UserLimits(maxStep);
+  logicSlice->SetUserLimits(stepLimit);  // applica al tuo volume sensibile
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......

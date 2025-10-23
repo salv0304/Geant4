@@ -1,0 +1,18 @@
+# run.mac
+# Macro per acquisizione dati Bethe-Bloch
+# Lancia 1000 protoni ad alta energia in modalità batch
+
+# Disabilita la visualizzazione per velocizzare
+/vis/disable
+
+# Initialize kernel
+/run/initialize
+#
+/control/verbose 2
+/run/verbose 2
+/event/verbose 0
+/tracking/verbose 1
+
+# set number of events
+/run/beamOn 100
+

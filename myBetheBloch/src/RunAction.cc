@@ -71,7 +71,7 @@ void RunAction::BeginOfRunAction(const G4Run* run)
 	
     fNtupleId = man->CreateNtuple("Simulation", "Simulation data");
     man->CreateNtupleIColumn("Event");
-    man->CreateNtupleDColumn("BeamEnergy");  // AGGIUNGI QUESTO
+    man->CreateNtupleDColumn("KineticEnergy");  // AGGIUNGI QUESTO
     man->CreateNtupleDColumn("StepLength");
     man->CreateNtupleDColumn("Edep");
     man->CreateNtupleDColumn("dEdx");
