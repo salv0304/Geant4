@@ -1,0 +1,8 @@
+/home/sa/GEANT4/geant4-v11.2.1/mycode/example1-build/CMakeFiles/exampleEX1.dir
+/home/sa/GEANT4/geant4-v11.2.1/mycode/example1-build/CMakeFiles/EX1.dir
+/home/sa/GEANT4/geant4-v11.2.1/mycode/example1-build/CMakeFiles/edit_cache.dir
+/home/sa/GEANT4/geant4-v11.2.1/mycode/example1-build/CMakeFiles/rebuild_cache.dir
+/home/sa/GEANT4/geant4-v11.2.1/mycode/example1-build/CMakeFiles/list_install_components.dir
+/home/sa/GEANT4/geant4-v11.2.1/mycode/example1-build/CMakeFiles/install.dir
+/home/sa/GEANT4/geant4-v11.2.1/mycode/example1-build/CMakeFiles/install/local.dir
+/home/sa/GEANT4/geant4-v11.2.1/mycode/example1-build/CMakeFiles/install/strip.dir

@@ -1,0 +1,8 @@
+/home/sa/GEANT4/geant4-v11.2.1/mycode/myBetheBloch-Build/CMakeFiles/exampleB1.dir
+/home/sa/GEANT4/geant4-v11.2.1/mycode/myBetheBloch-Build/CMakeFiles/B1.dir
+/home/sa/GEANT4/geant4-v11.2.1/mycode/myBetheBloch-Build/CMakeFiles/edit_cache.dir
+/home/sa/GEANT4/geant4-v11.2.1/mycode/myBetheBloch-Build/CMakeFiles/rebuild_cache.dir
+/home/sa/GEANT4/geant4-v11.2.1/mycode/myBetheBloch-Build/CMakeFiles/list_install_components.dir
+/home/sa/GEANT4/geant4-v11.2.1/mycode/myBetheBloch-Build/CMakeFiles/install.dir
+/home/sa/GEANT4/geant4-v11.2.1/mycode/myBetheBloch-Build/CMakeFiles/install/local.dir
+/home/sa/GEANT4/geant4-v11.2.1/mycode/myBetheBloch-Build/CMakeFiles/install/strip.dir

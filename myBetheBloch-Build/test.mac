@@ -1,0 +1,8 @@
+/gps/particle proton
+/gps/position 0 0 -600 mm
+/gps/direction 0 0 1
+
+/gps/ene/type Mono
+/gps/ene/mono 100 GeV
+/run/beamOn 10000
+
