@@ -1,7 +1,7 @@
 CMakeFiles/exampleB1.dir/src/RunAction.cc.o: \
- /home/sa/GEANT4/geant4-v11.2.1/mycode/myBetheBloch/src/RunAction.cc \
+ /home/sa/Git/geant4/myBetheBloch/src/RunAction.cc \
  /usr/include/stdc-predef.h \
- /home/sa/GEANT4/geant4-v11.2.1/mycode/myBetheBloch/include/RunAction.hh \
+ /home/sa/Git/geant4/myBetheBloch/include/RunAction.hh \
  /home/sa/GEANT4/geant4-v11.2.1-install/include/Geant4/G4UserRunAction.hh \
  /home/sa/GEANT4/geant4-v11.2.1-install/include/Geant4/G4Types.hh \
  /home/sa/GEANT4/geant4-v11.2.1-install/include/Geant4/G4GlobalConfig.hh \
@@ -339,7 +339,7 @@ CMakeFiles/exampleB1.dir/src/RunAction.cc.o: \
  /home/sa/GEANT4/geant4-v11.2.1-install/include/Geant4/G4GenericAnalysisManager.icc \
  /home/sa/GEANT4/geant4-v11.2.1-install/include/Geant4/G4GenericFileManager.hh \
  /home/sa/GEANT4/geant4-v11.2.1-install/include/Geant4/G4GenericFileManager.icc \
- /home/sa/GEANT4/geant4-v11.2.1/mycode/myBetheBloch/include/PrimaryGeneratorAction.hh \
+ /home/sa/Git/geant4/myBetheBloch/include/PrimaryGeneratorAction.hh \
  /home/sa/GEANT4/geant4-v11.2.1-install/include/Geant4/G4VUserPrimaryGeneratorAction.hh \
  /home/sa/GEANT4/geant4-v11.2.1-install/include/Geant4/G4ParticleGun.hh \
  /home/sa/GEANT4/geant4-v11.2.1-install/include/Geant4/G4VPrimaryGenerator.hh \
@@ -459,7 +459,7 @@ CMakeFiles/exampleB1.dir/src/RunAction.cc.o: \
  /home/sa/GEANT4/geant4-v11.2.1-install/include/Geant4/G4SPSEneDistribution.hh \
  /home/sa/GEANT4/geant4-v11.2.1-install/include/Geant4/G4GeneralParticleSourceMessenger.hh \
  /home/sa/GEANT4/geant4-v11.2.1-install/include/Geant4/G4GeneralParticleSourceData.hh \
- /home/sa/GEANT4/geant4-v11.2.1/mycode/myBetheBloch/include/DetectorConstruction.hh \
+ /home/sa/Git/geant4/myBetheBloch/include/DetectorConstruction.hh \
  /home/sa/GEANT4/geant4-v11.2.1-install/include/Geant4/G4VUserDetectorConstruction.hh \
  /home/sa/GEANT4/geant4-v11.2.1-install/include/Geant4/G4RunManager.hh \
  /home/sa/GEANT4/geant4-v11.2.1-install/include/Geant4/G4EventManager.hh \

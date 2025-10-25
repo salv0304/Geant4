@@ -1,7 +1,7 @@
 CMakeFiles/exampleB1.dir/src/SensitiveDetector.cc.o: \
- /home/sa/GEANT4/geant4-v11.2.1/mycode/myBetheBloch/src/SensitiveDetector.cc \
+ /home/sa/Git/geant4/myBetheBloch/src/SensitiveDetector.cc \
  /usr/include/stdc-predef.h \
- /home/sa/GEANT4/geant4-v11.2.1/mycode/myBetheBloch/include/SensitiveDetector.hh \
+ /home/sa/Git/geant4/myBetheBloch/include/SensitiveDetector.hh \
  /home/sa/GEANT4/geant4-v11.2.1-install/include/Geant4/G4VSensitiveDetector.hh \
  /home/sa/GEANT4/geant4-v11.2.1-install/include/Geant4/G4CollectionNameVector.hh \
  /home/sa/GEANT4/geant4-v11.2.1-install/include/Geant4/globals.hh \
@@ -568,7 +568,7 @@ CMakeFiles/exampleB1.dir/src/SensitiveDetector.cc.o: \
  /home/sa/GEANT4/geant4-v11.2.1-install/include/Geant4/G4GenericAnalysisManager.icc \
  /home/sa/GEANT4/geant4-v11.2.1-install/include/Geant4/G4GenericFileManager.hh \
  /home/sa/GEANT4/geant4-v11.2.1-install/include/Geant4/G4GenericFileManager.icc \
- /home/sa/GEANT4/geant4-v11.2.1/mycode/myBetheBloch/include/RunAction.hh \
+ /home/sa/Git/geant4/myBetheBloch/include/RunAction.hh \
  /home/sa/GEANT4/geant4-v11.2.1-install/include/Geant4/G4UserRunAction.hh \
  /home/sa/GEANT4/geant4-v11.2.1-install/include/Geant4/G4Accumulable.hh \
  /home/sa/GEANT4/geant4-v11.2.1-install/include/Geant4/G4VAccumulable.hh \

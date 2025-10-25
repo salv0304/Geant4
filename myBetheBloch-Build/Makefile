@@ -57,10 +57,10 @@ RM = /snap/cmake/1487/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/sa/GEANT4/geant4-v11.2.1/mycode/myBetheBloch
+CMAKE_SOURCE_DIR = /home/sa/Git/geant4/myBetheBloch
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/sa/GEANT4/geant4-v11.2.1/mycode/myBetheBloch-Build
+CMAKE_BINARY_DIR = /home/sa/Git/geant4/myBetheBloch-Build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,9 +132,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sa/GEANT4/geant4-v11.2.1/mycode/myBetheBloch-Build/CMakeFiles /home/sa/GEANT4/geant4-v11.2.1/mycode/myBetheBloch-Build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sa/Git/geant4/myBetheBloch-Build/CMakeFiles /home/sa/Git/geant4/myBetheBloch-Build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sa/GEANT4/geant4-v11.2.1/mycode/myBetheBloch-Build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sa/Git/geant4/myBetheBloch-Build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

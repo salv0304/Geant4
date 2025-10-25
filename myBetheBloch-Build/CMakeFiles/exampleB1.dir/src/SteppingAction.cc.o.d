@@ -1,7 +1,7 @@
 CMakeFiles/exampleB1.dir/src/SteppingAction.cc.o: \
- /home/sa/GEANT4/geant4-v11.2.1/mycode/myBetheBloch/src/SteppingAction.cc \
+ /home/sa/Git/geant4/myBetheBloch/src/SteppingAction.cc \
  /usr/include/stdc-predef.h \
- /home/sa/GEANT4/geant4-v11.2.1/mycode/myBetheBloch/include/SteppingAction.hh \
+ /home/sa/Git/geant4/myBetheBloch/include/SteppingAction.hh \
  /home/sa/GEANT4/geant4-v11.2.1-install/include/Geant4/G4UserSteppingAction.hh \
  /home/sa/GEANT4/geant4-v11.2.1-install/include/Geant4/globals.hh \
  /home/sa/GEANT4/geant4-v11.2.1-install/include/Geant4/G4ios.hh \
@@ -227,9 +227,9 @@ CMakeFiles/exampleB1.dir/src/SteppingAction.cc.o: \
  /usr/include/c++/13/bits/parse_numbers.h \
  /usr/include/c++/13/bits/std_mutex.h \
  /usr/include/c++/13/bits/unique_lock.h \
- /home/sa/GEANT4/geant4-v11.2.1/mycode/myBetheBloch/include/EventAction.hh \
+ /home/sa/Git/geant4/myBetheBloch/include/EventAction.hh \
  /home/sa/GEANT4/geant4-v11.2.1-install/include/Geant4/G4UserEventAction.hh \
- /home/sa/GEANT4/geant4-v11.2.1/mycode/myBetheBloch/include/DetectorConstruction.hh \
+ /home/sa/Git/geant4/myBetheBloch/include/DetectorConstruction.hh \
  /home/sa/GEANT4/geant4-v11.2.1-install/include/Geant4/G4VUserDetectorConstruction.hh \
  /home/sa/GEANT4/geant4-v11.2.1-install/include/Geant4/globals.hh \
  /usr/include/c++/13/vector /usr/include/c++/13/bits/stl_uninitialized.h \

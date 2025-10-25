@@ -1,9 +1,9 @@
 CMakeFiles/exampleB1.dir/src/ActionInitialization.cc.o: \
- /home/sa/GEANT4/geant4-v11.2.1/mycode/myBetheBloch/src/ActionInitialization.cc \
+ /home/sa/Git/geant4/myBetheBloch/src/ActionInitialization.cc \
  /usr/include/stdc-predef.h \
- /home/sa/GEANT4/geant4-v11.2.1/mycode/myBetheBloch/include/ActionInitialization.hh \
+ /home/sa/Git/geant4/myBetheBloch/include/ActionInitialization.hh \
  /home/sa/GEANT4/geant4-v11.2.1-install/include/Geant4/G4VUserActionInitialization.hh \
- /home/sa/GEANT4/geant4-v11.2.1/mycode/myBetheBloch/include/PrimaryGeneratorAction.hh \
+ /home/sa/Git/geant4/myBetheBloch/include/PrimaryGeneratorAction.hh \
  /home/sa/GEANT4/geant4-v11.2.1-install/include/Geant4/G4VUserPrimaryGeneratorAction.hh \
  /home/sa/GEANT4/geant4-v11.2.1-install/include/Geant4/G4ParticleGun.hh \
  /home/sa/GEANT4/geant4-v11.2.1-install/include/Geant4/globals.hh \
@@ -395,7 +395,7 @@ CMakeFiles/exampleB1.dir/src/ActionInitialization.cc.o: \
  /home/sa/GEANT4/geant4-v11.2.1-install/include/Geant4/G4UItokenNum.hh \
  /home/sa/GEANT4/geant4-v11.2.1-install/include/Geant4/G4GeneralParticleSourceData.hh \
  /home/sa/GEANT4/geant4-v11.2.1-install/include/Geant4/globals.hh \
- /home/sa/GEANT4/geant4-v11.2.1/mycode/myBetheBloch/include/RunAction.hh \
+ /home/sa/Git/geant4/myBetheBloch/include/RunAction.hh \
  /home/sa/GEANT4/geant4-v11.2.1-install/include/Geant4/G4UserRunAction.hh \
  /home/sa/GEANT4/geant4-v11.2.1-install/include/Geant4/G4Accumulable.hh \
  /home/sa/GEANT4/geant4-v11.2.1-install/include/Geant4/G4VAccumulable.hh \
@@ -462,7 +462,7 @@ CMakeFiles/exampleB1.dir/src/ActionInitialization.cc.o: \
  /home/sa/GEANT4/geant4-v11.2.1-install/include/Geant4/G4GenericAnalysisManager.icc \
  /home/sa/GEANT4/geant4-v11.2.1-install/include/Geant4/G4GenericFileManager.hh \
  /home/sa/GEANT4/geant4-v11.2.1-install/include/Geant4/G4GenericFileManager.icc \
- /home/sa/GEANT4/geant4-v11.2.1/mycode/myBetheBloch/include/EventAction.hh \
+ /home/sa/Git/geant4/myBetheBloch/include/EventAction.hh \
  /home/sa/GEANT4/geant4-v11.2.1-install/include/Geant4/G4UserEventAction.hh \
- /home/sa/GEANT4/geant4-v11.2.1/mycode/myBetheBloch/include/SteppingAction.hh \
+ /home/sa/Git/geant4/myBetheBloch/include/SteppingAction.hh \
  /home/sa/GEANT4/geant4-v11.2.1-install/include/Geant4/G4UserSteppingAction.hh
