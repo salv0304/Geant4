@@ -57,22 +57,25 @@ PrimaryGeneratorAction::PrimaryGeneratorAction()
     G4ParticleDefinition* particle = particleTable->FindParticle("proton");
     
     fParticleSource->SetParticleDefinition(particle);
-/*
-    fParticleGun->SetParticlePosition(G4ThreeVector(0., 0., -0.6*m));
-    fParticleGun->SetParticleMomentumDirection(G4ThreeVector(0., 0., 1.));
-    fParticleGun->SetParticleMomentum(100*GeV);
-*/
-    // Posizione iniziale
+
+    // Initial position
     fParticleSource->GetCurrentSource()->GetPosDist()->SetCentreCoords(G4ThreeVector(0., 0., -0.6*m));
     fParticleSource->GetCurrentSource()->GetPosDist()->SetPosDisType("Point");
 
-    // Direzione
+    // Direction
     fParticleSource->GetCurrentSource()->GetAngDist()->SetParticleMomentumDirection(G4ThreeVector(0., 0., 1.));
 
-    // Energia (fissa o distribuita)
+    // Energy (fixed)
     fParticleSource->GetCurrentSource()->GetEneDist()->SetEnergyDisType("Mono");
-    fParticleSource->GetCurrentSource()->GetEneDist()->SetMonoEnergy(500.*MeV);
-    
+    fParticleSource->GetCurrentSource()->GetEneDist()->SetMonoEnergy(1000.*MeV);
+
+/*    
+    // Energy (linear distribution)
+    G4SPSEneDistribution* eneDist = fParticleSource->GetCurrentSource()->GetEneDist();
+    eneDist->SetEnergyDisType("Lin");
+	eneDist->SetEmin(100.*MeV);         // Minimum energy
+    eneDist->SetEmax(1000.*MeV);        // Maximum energy
+*/
 }
 
 

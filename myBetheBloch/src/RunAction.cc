@@ -56,22 +56,17 @@ RunAction::RunAction()
 void RunAction::BeginOfRunAction(const G4Run* run)
 {
     auto man = G4AnalysisManager::Instance();
-	man->SetNtupleMerging(true);  // AGGIUNGI QUESTA RIGA!
     
     
-/*    
-    G4double energy = generatorAction->GetBeamEnergy();
-    G4String ntupleName = "Energy_" + std::to_string((int)(energy/CLHEP::MeV)) + "MeV";
+	man->SetNtupleMerging(true);  // to merge different the outputs 
     
-    if (run->GetRunID() == 0) {
-        man->OpenFile("output_all_energies.root");
-    }
-*/    
+	// Open the output file  
 	man->OpenFile("output.root");
 	
+	// Create the Ntuple and its columns
     fNtupleId = man->CreateNtuple("Simulation", "Simulation data");
     man->CreateNtupleIColumn("Event");
-    man->CreateNtupleDColumn("KineticEnergy");  // AGGIUNGI QUESTO
+    man->CreateNtupleDColumn("KineticEnergy"); 
     man->CreateNtupleDColumn("StepLength");
     man->CreateNtupleDColumn("Edep");
     man->CreateNtupleDColumn("dEdx");
