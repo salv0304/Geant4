@@ -1,6 +1,7 @@
 CMakeFiles/exampleB1.dir/exampleB1.cc.o: \
- /home/sa/Git/geant4/myBetheBloch/exampleB1.cc /usr/include/stdc-predef.h \
- /home/sa/Git/geant4/myBetheBloch/include/DetectorConstruction.hh \
+ /home/sa/GEANT4/geant4-v11.2.1/mycode/myBetheBloch/exampleB1.cc \
+ /usr/include/stdc-predef.h \
+ /home/sa/GEANT4/geant4-v11.2.1/mycode/myBetheBloch/include/DetectorConstruction.hh \
  /home/sa/GEANT4/geant4-v11.2.1-install/include/Geant4/G4VUserDetectorConstruction.hh \
  /home/sa/GEANT4/geant4-v11.2.1-install/include/Geant4/globals.hh \
  /home/sa/GEANT4/geant4-v11.2.1-install/include/Geant4/G4ios.hh \
@@ -231,7 +232,7 @@ CMakeFiles/exampleB1.dir/exampleB1.cc.o: \
  /usr/include/c++/13/bits/stl_bvector.h \
  /usr/include/c++/13/bits/vector.tcc \
  /home/sa/GEANT4/geant4-v11.2.1-install/include/Geant4/globals.hh \
- /home/sa/Git/geant4/myBetheBloch/include/ActionInitialization.hh \
+ /home/sa/GEANT4/geant4-v11.2.1/mycode/myBetheBloch/include/ActionInitialization.hh \
  /home/sa/GEANT4/geant4-v11.2.1-install/include/Geant4/G4VUserActionInitialization.hh \
  /home/sa/GEANT4/geant4-v11.2.1-install/include/Geant4/G4RunManagerFactory.hh \
  /home/sa/GEANT4/geant4-v11.2.1-install/include/Geant4/G4MTRunManager.hh \

@@ -1,7 +1,7 @@
 CMakeFiles/exampleB1.dir/src/EventAction.cc.o: \
- /home/sa/Git/geant4/myBetheBloch/src/EventAction.cc \
+ /home/sa/GEANT4/geant4-v11.2.1/mycode/myBetheBloch/src/EventAction.cc \
  /usr/include/stdc-predef.h \
- /home/sa/Git/geant4/myBetheBloch/include/EventAction.hh \
+ /home/sa/GEANT4/geant4-v11.2.1/mycode/myBetheBloch/include/EventAction.hh \
  /home/sa/GEANT4/geant4-v11.2.1-install/include/Geant4/G4UserEventAction.hh \
  /home/sa/GEANT4/geant4-v11.2.1-install/include/Geant4/globals.hh \
  /home/sa/GEANT4/geant4-v11.2.1-install/include/Geant4/G4ios.hh \
@@ -227,7 +227,7 @@ CMakeFiles/exampleB1.dir/src/EventAction.cc.o: \
  /usr/include/c++/13/bits/parse_numbers.h \
  /usr/include/c++/13/bits/std_mutex.h \
  /usr/include/c++/13/bits/unique_lock.h \
- /home/sa/Git/geant4/myBetheBloch/include/RunAction.hh \
+ /home/sa/GEANT4/geant4-v11.2.1/mycode/myBetheBloch/include/RunAction.hh \
  /home/sa/GEANT4/geant4-v11.2.1-install/include/Geant4/G4UserRunAction.hh \
  /home/sa/GEANT4/geant4-v11.2.1-install/include/Geant4/G4Accumulable.hh \
  /home/sa/GEANT4/geant4-v11.2.1-install/include/Geant4/G4VAccumulable.hh \

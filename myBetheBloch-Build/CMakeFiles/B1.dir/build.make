@@ -53,10 +53,10 @@ RM = /snap/cmake/1487/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/sa/Git/geant4/myBetheBloch
+CMAKE_SOURCE_DIR = /home/sa/GEANT4/geant4-v11.2.1/mycode/myBetheBloch
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/sa/Git/geant4/myBetheBloch-Build
+CMAKE_BINARY_DIR = /home/sa/GEANT4/geant4-v11.2.1/mycode/myBetheBloch-Build
 
 # Utility rule file for B1.
 
@@ -84,6 +84,6 @@ CMakeFiles/B1.dir/clean:
 .PHONY : CMakeFiles/B1.dir/clean
 
 CMakeFiles/B1.dir/depend:
-	cd /home/sa/Git/geant4/myBetheBloch-Build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/sa/Git/geant4/myBetheBloch /home/sa/Git/geant4/myBetheBloch /home/sa/Git/geant4/myBetheBloch-Build /home/sa/Git/geant4/myBetheBloch-Build /home/sa/Git/geant4/myBetheBloch-Build/CMakeFiles/B1.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/sa/GEANT4/geant4-v11.2.1/mycode/myBetheBloch-Build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/sa/GEANT4/geant4-v11.2.1/mycode/myBetheBloch /home/sa/GEANT4/geant4-v11.2.1/mycode/myBetheBloch /home/sa/GEANT4/geant4-v11.2.1/mycode/myBetheBloch-Build /home/sa/GEANT4/geant4-v11.2.1/mycode/myBetheBloch-Build /home/sa/GEANT4/geant4-v11.2.1/mycode/myBetheBloch-Build/CMakeFiles/B1.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/B1.dir/depend
 

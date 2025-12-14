@@ -101,7 +101,21 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
   {
     G4VPhysicalVolume *physDetector = new G4PVPlacement(0, G4ThreeVector(0, 0, -0.5*m+(i+0.5)*m/100), logicSlice, "physSlice", logicWorld, false, i, true);	// each detector has a different index
   }
+  
+/*
+  G4LogicalVolume *logicSlice = new G4LogicalVolume(solidSlice,  // its solid
+    slice_mat,                                     // its material
+    "Slice");                                 // its name
 
+  new G4PVPlacement(nullptr,  // no rotation
+    G4ThreeVector(),          // at (0,0,0)
+    logicSlice,                 // its logical volume
+    "Slice",               // its name
+    logicWorld,               // its mother  volume
+    false,                    // no boolean operation
+    0,                        // copy number
+    checkOverlaps);           // overlaps checking
+*/    
     return physWorld;
 }
 
@@ -112,12 +126,11 @@ void DetectorConstruction::ConstructSDandField()
 	
 	// Tell to the logicVolume that this is a sensitive detector
 	logicSlice->SetSensitiveDetector(sensDet);
-/*	
-	// Setting a maxstep can be useful
-	G4double maxStep = 0.1*mm;  // Max step of 0.1 mm
-	G4UserLimits* stepLimit = new G4UserLimits(maxStep);
-	logicSlice->SetUserLimits(stepLimit);  
-*/
+	
+  // Nel tuo DetectorConstruction.cc, dopo aver definito il materiale piombo:
+  G4double maxStep = 0.1*mm;  // Step massimo di 0.1 mm
+  G4UserLimits* stepLimit = new G4UserLimits(maxStep);
+  logicSlice->SetUserLimits(stepLimit);  // applica al tuo volume sensibile
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......

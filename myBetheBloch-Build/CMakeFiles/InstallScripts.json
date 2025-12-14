@@ -1,7 +1,7 @@
 {
 	"InstallScripts" : 
 	[
-		"/home/sa/Git/geant4/myBetheBloch-Build/cmake_install.cmake"
+		"/home/sa/GEANT4/geant4-v11.2.1/mycode/myBetheBloch-Build/cmake_install.cmake"
 	],
 	"Parallel" : false
 }

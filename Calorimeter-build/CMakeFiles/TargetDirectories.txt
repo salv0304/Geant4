@@ -1,0 +1,8 @@
+/home/sa/GEANT4/geant4-v11.2.1/mycode/Calorimeter-build/CMakeFiles/Calorimeter.dir
+/home/sa/GEANT4/geant4-v11.2.1/mycode/Calorimeter-build/CMakeFiles/RUT.dir
+/home/sa/GEANT4/geant4-v11.2.1/mycode/Calorimeter-build/CMakeFiles/edit_cache.dir
+/home/sa/GEANT4/geant4-v11.2.1/mycode/Calorimeter-build/CMakeFiles/rebuild_cache.dir
+/home/sa/GEANT4/geant4-v11.2.1/mycode/Calorimeter-build/CMakeFiles/list_install_components.dir
+/home/sa/GEANT4/geant4-v11.2.1/mycode/Calorimeter-build/CMakeFiles/install.dir
+/home/sa/GEANT4/geant4-v11.2.1/mycode/Calorimeter-build/CMakeFiles/install/local.dir
+/home/sa/GEANT4/geant4-v11.2.1/mycode/Calorimeter-build/CMakeFiles/install/strip.dir

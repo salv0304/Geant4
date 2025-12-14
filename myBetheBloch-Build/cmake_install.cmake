@@ -1,4 +1,4 @@
-# Install script for directory: /home/sa/Git/geant4/myBetheBloch
+# Install script for directory: /home/sa/GEANT4/geant4-v11.2.1/mycode/myBetheBloch
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -49,7 +49,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/exampleB1"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/home/sa/Git/geant4/myBetheBloch-Build/exampleB1")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/home/sa/GEANT4/geant4-v11.2.1/mycode/myBetheBloch-Build/exampleB1")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/exampleB1" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/exampleB1")
     file(RPATH_CHANGE
@@ -63,13 +63,13 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/home/sa/Git/geant4/myBetheBloch-Build/CMakeFiles/exampleB1.dir/install-cxx-module-bmi-noconfig.cmake" OPTIONAL)
+  include("/home/sa/GEANT4/geant4-v11.2.1/mycode/myBetheBloch-Build/CMakeFiles/exampleB1.dir/install-cxx-module-bmi-noconfig.cmake" OPTIONAL)
 endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/home/sa/Git/geant4/myBetheBloch-Build/install_local_manifest.txt"
+  file(WRITE "/home/sa/GEANT4/geant4-v11.2.1/mycode/myBetheBloch-Build/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()
 if(CMAKE_INSTALL_COMPONENT)
@@ -85,6 +85,6 @@ else()
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/home/sa/Git/geant4/myBetheBloch-Build/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "/home/sa/GEANT4/geant4-v11.2.1/mycode/myBetheBloch-Build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

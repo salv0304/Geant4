@@ -1,0 +1,68 @@
+# Macro per visualizzazione pulita per presentazione
+
+/run/initialize
+
+# Finestra più grande e ad alta risoluzione
+/vis/open OGL 1200x900-0+0
+
+# Disabilita auto refresh durante il setup
+/vis/viewer/set/autoRefresh false
+/vis/verbose errors
+
+# Disegna la geometria
+/vis/drawVolume
+
+# ========== RIMUOVI IL BOX DEL WORLD ==========
+/vis/geometry/set/visibility logicWorld 0 false
+
+# ========== IMPOSTA I COLORI ==========
+/vis/geometry/set/colour logicScint 0 0 0.5 1 0.8    # Blu semi-trasparente
+/vis/geometry/set/colour logicPMT 0 1 1 0 0.9         # Giallo semi-trasparente
+#/vis/geometry/set/colour logicSlab 0 0.7 0 0 0.7    # Rosso semi-trasparente (se usi il Pb)
+
+# ========== AGGIUNGI GLI ASSI ==========
+/vis/scene/add/axes -10 -100 -100 50 cm    # Assi centrati in (0,0,0) con lunghezza 50 cm
+
+# Oppure usa una scala graduata:
+# /vis/scene/add/scale 50 cm        # Barra di scala di 50 cm
+
+# ========== IMPOSTA LA VISTA ==========
+# Vista dall'alto leggermente inclinata
+#/vis/viewer/set/viewpointVector 1 1 0.5
+#/vis/viewer/set/upVector 0 1 0
+
+# Vista laterale
+/vis/viewer/set/viewpointVector 1 0 0
+
+# Vista frontale
+# /vis/viewer/set/viewpointVector 0 0 1
+
+# ========== STILE DI RENDERING ==========
+# Superfici solide (migliore per presentazioni)
+/vis/viewer/set/style surface
+/vis/viewer/set/auxiliaryEdge true
+/vis/viewer/set/lineSegmentsPerCircle 100
+
+# Wireframe (alternativa)
+#/vis/viewer/set/style wireframe
+
+# ========== ILLUMINAZIONE ==========
+/vis/viewer/set/lightsVector 1 1 1
+
+# ========== SFONDO ==========
+#/vis/viewer/set/background white
+# Oppure nero per contrasto:
+/vis/viewer/set/background 0 0 0 1
+
+# ========== TRAIETTORIE ==========
+/vis/scene/add/trajectories smooth
+/vis/modeling/trajectories/create/drawByCharge
+/vis/modeling/trajectories/drawByCharge-0/default/setDrawStepPts true
+/vis/modeling/trajectories/drawByCharge-0/default/setStepPtsSize 3
+
+# ========== FILTRI (opzionale) ==========
+# Non mostrare i fotoni ottici (troppi!)
+/vis/filtering/trajectories/create/particleFilter
+/vis/filtering/trajectories/particleFilter-0/add opticalphoton
+/vis/filtering/trajectories/particleFilter-0/invert true
+

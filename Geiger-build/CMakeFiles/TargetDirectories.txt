@@ -1,0 +1,8 @@
+/home/sa/GEANT4/geant4-v11.2.1/mycode/Geiger-build/CMakeFiles/Geiger.dir
+/home/sa/GEANT4/geant4-v11.2.1/mycode/Geiger-build/CMakeFiles/GEIGER.dir
+/home/sa/GEANT4/geant4-v11.2.1/mycode/Geiger-build/CMakeFiles/edit_cache.dir
+/home/sa/GEANT4/geant4-v11.2.1/mycode/Geiger-build/CMakeFiles/rebuild_cache.dir
+/home/sa/GEANT4/geant4-v11.2.1/mycode/Geiger-build/CMakeFiles/list_install_components.dir
+/home/sa/GEANT4/geant4-v11.2.1/mycode/Geiger-build/CMakeFiles/install.dir
+/home/sa/GEANT4/geant4-v11.2.1/mycode/Geiger-build/CMakeFiles/install/local.dir
+/home/sa/GEANT4/geant4-v11.2.1/mycode/Geiger-build/CMakeFiles/install/strip.dir

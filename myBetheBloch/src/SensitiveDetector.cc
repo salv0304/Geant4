@@ -20,17 +20,16 @@ G4bool MySensitiveDetector::ProcessHits(G4Step *aStep, G4TouchableHistory *ROhli
 	G4cout << "ProcessHits called!" << G4endl;  // DEBUG
 
 
-	// Obtain the energy of the primary from the track
+	// Ottieni l'energia del primario dal track
 	G4Track* track = aStep->GetTrack();
 	
-	// I want the energy only of the primary particles
+	// FONDAMENTALE: filtra solo particelle primarie
 	if (track->GetParentID() != 0) return true;
 	
     
-    // Get the deposited energy
+    // POI: Controlla energia depositata
     G4double edep = aStep->GetTotalEnergyDeposit();
-    //if (edep == 0.) return false;
-    if (edep == 0.) edep = 0.;
+    if (edep == 0.) return false;
 	
 	// Identify which slice is the interested one
 	const G4VTouchable *touchable = aStep->GetPreStepPoint()->GetTouchable();
@@ -39,7 +38,7 @@ G4bool MySensitiveDetector::ProcessHits(G4Step *aStep, G4TouchableHistory *ROhli
     // Obtain step lenght
     G4double stepLength = aStep->GetStepLength();
     
-	// Use the energy before the deposition (pre-step)
+	// CHIAVE: usa l'energia al PRE-step point (energia PRIMA della perdita)
     G4double kineticEnergy = aStep->GetPreStepPoint()->GetKineticEnergy();
     
     // Calculate dE/dx
@@ -59,10 +58,17 @@ G4bool MySensitiveDetector::ProcessHits(G4Step *aStep, G4TouchableHistory *ROhli
 	// For the analysis
 	G4AnalysisManager *man = G4AnalysisManager::Instance();
 
-    // To have access at the event (we need also the G4RunManager.hh for this)    
+/*	
+	// ID ntuple
+    const RunAction* runAction = static_cast<const RunAction*>
+        (G4RunManager::GetRunManager()->GetUserRunAction());
+    G4int ntupleId = runAction->GetCurrentNtupleId();
+*/	
+    // To have access at the event (we need also the G4RunManager.hh for this)
+    
 	G4int evt = G4RunManager::GetRunManager()->GetCurrentEvent()->GetEventID();
     
-    // Fill the Ntuple    
+    
     man->FillNtupleIColumn(0, evt);
     man->FillNtupleDColumn(1, kineticEnergy); 
     man->FillNtupleDColumn(2, stepLength);

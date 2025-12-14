@@ -1,7 +1,7 @@
 CMakeFiles/exampleB1.dir/src/PrimaryGeneratorAction.cc.o: \
- /home/sa/Git/geant4/myBetheBloch/src/PrimaryGeneratorAction.cc \
+ /home/sa/GEANT4/geant4-v11.2.1/mycode/myBetheBloch/src/PrimaryGeneratorAction.cc \
  /usr/include/stdc-predef.h \
- /home/sa/Git/geant4/myBetheBloch/include/PrimaryGeneratorAction.hh \
+ /home/sa/GEANT4/geant4-v11.2.1/mycode/myBetheBloch/include/PrimaryGeneratorAction.hh \
  /home/sa/GEANT4/geant4-v11.2.1-install/include/Geant4/G4VUserPrimaryGeneratorAction.hh \
  /home/sa/GEANT4/geant4-v11.2.1-install/include/Geant4/G4ParticleGun.hh \
  /home/sa/GEANT4/geant4-v11.2.1-install/include/Geant4/globals.hh \
