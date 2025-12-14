@@ -1,7 +1,0 @@
-{
-	"InstallScripts" : 
-	[
-		"/home/sa/GEANT4/geant4-v11.2.1/mycode/Calorimeter-build/cmake_install.cmake"
-	],
-	"Parallel" : false
-}
