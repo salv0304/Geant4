@@ -11,7 +11,7 @@ This directory contains my projects developed using **Geant4**, mainly for acade
   A first personal project aimed at reproducing the **Bethe–Bloch energy loss curve**, used to practice physics implementation in Geant4.
 
 - **exampleRUT/** & **exampleRUT-build/**  
-  An example of a **RUT experiment** provided by the course instructor.
+  An example of the Rutherford experiment provided by the course instructor.
 
 - **sim/** & **sim-build/**  
   A simple project created from scratch following a web tutorial, used to learn the basic structure of a Geant4 application.
